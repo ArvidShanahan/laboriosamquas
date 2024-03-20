@@ -1,0 +1,65 @@
+{
+  "name": "laboriosamquas",
+  "version": "1.0.0",
+  "description": "Xcert token implementation for the Ethereum blockchain.",
+  "main": "truffle.js",
+  "directories": {
+    "contracts": "contracts",
+    "migrations": "migrations",
+    "test": "test"
+  },
+  "scripts": {
+    "clean": "rm -Rf ./build",
+    "compile": "truffle compile",
+    "console": "truffle console",
+    "flatten": "mkdir -p build && truffle-flattener contracts/**/*.sol >> build/bundle.sol",
+    "lint": "eslint './**/*.js?(x)'",
+    "migrate": "truffle migrate",
+    "networks": "truffle networks",
+    "postpublish": "npm run clean",
+    "prepublish": "npm run compile",
+    "test": "npm run clean && truffle test"
+  },
+  "author": "KamrenHeathcote",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArvidShanahan/laboriosamquas.git"
+  },
+  "keywords": [
+    "error",
+    "nesciunt",
+    "sunt",
+    "contract",
+    "contracts",
+    "saepe",
+    "aspernatur",
+    "et",
+    "token",
+    "tokens",
+    "nft",
+    "nfts",
+    "illum",
+    "non-fungibles",
+    "ea",
+    "omnis",
+    "et",
+    "sit",
+    "quod",
+    "ratione",
+    "xcert",
+    "certified",
+    "sequi",
+    "omnis"
+  ],
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "ethjs-util": "^0.1.4",
+    "truffle": "^4.1.11",
+    "truffle-flattener": "^1.2.5",
+    "web3-utils": "^1.0.0-beta.34"
+  },
+  "dependencies": {
+    "@0xcert/ethereum-erc721": "^1.10.0"
+  }
+}
